@@ -35,7 +35,11 @@ export default {
           </div>
         </template>
       </Header>
+      
       <div class="container-fluid">
+        <div>
+        <router-view></router-view>
+        </div>
         <div class="row">
           <div class="col-12 col-xl-9 d-flex align-items-center justify-content-start justify-content-md-center justify-content-xl-start ">
             <div>

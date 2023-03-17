@@ -10,6 +10,8 @@
             Welcome to my personal website!</small>
     </div>
     <hr>
+    <router-link to="/">Home</router-link>
+    <router-link to="/about">About</router-link>
     
   </aside>
 </template>
