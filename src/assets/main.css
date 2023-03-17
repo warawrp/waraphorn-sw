@@ -1,0 +1,106 @@
+:root{
+  --primary: #4682B4;
+  --primary-hover: #2573b3;
+  --secondary:#1e2738;
+  --warning:#f6d07f;
+  --warning-hover:#f3c35d;
+  --grey:#a5b3ce;
+  --white:#ffffff;
+  --lightgrey:#fafafa;
+}
+
+body{
+  font-family: 'Rubik', 'Kanit', sans-serif;
+  font-size: 16px;
+  color: var(--secondary);
+}
+
+.contact-img{
+  filter: invert(94%) sepia(44%) saturate(4632%) hue-rotate(175deg) brightness(87%) contrast(83%);
+  width: 25px;
+}
+
+button:focus{
+  outline: none !important;
+  box-shadow:none !important;
+}
+
+.small{
+  font-weight: lighter;
+  font-size: 14px;
+}
+
+p{
+  font-weight: lighter;
+}
+
+.pill{
+  background-color: var(--grey);
+  color: var(--white);
+  font-weight: 500;
+  font-size: 12px;
+  border: none;
+  border-radius: 8px;
+  padding: 2px 5px 1px;
+  height: 20px;
+}
+
+.html{
+  background-color: #dd4b25
+}
+
+.css{
+  background-color: #0079b1;
+}
+
+.js{
+  background-color: #f29727;
+}
+
+.bootstrap{
+  background-color: #7952b3;
+}
+
+.vue{
+  background-color: #42b883;
+}
+
+.next{
+  background-color: #000;
+}
+
+.nuxt{
+  background-color: #00DC82;
+}
+
+.tailwind{
+  background-color: #0ea5e9;
+}
+
+.figma{
+  background-color: #ff7161;
+}
+
+.ai{
+  background-color: #f79500 ;
+}
+
+.psd{
+  background-color: #2fa3f7;
+}
+
+.draw{
+  background-color: #e88305;
+}
+
+.xd{
+  background-color: #ff61f6;
+}
+
+.laravel{
+  background-color: #e83a2d;
+}
+
+a{
+  text-decoration: none;
+}
