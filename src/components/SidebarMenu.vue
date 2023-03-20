@@ -1,6 +1,6 @@
 <template>
         <div @click="addClass(id)" >
-          <div class="d-flex gap-3 align-item-center box" :class="{ active: isActive == true }">
+          <div class="d-flex gap-3 align-item-center box" :class="{ active: isActive == true}">
             <img  :src="getIcon()">
             <p>{{ menu }}</p>
           </div>
@@ -17,6 +17,9 @@ export default {
         type: String
       },
       icon:{
+        type: String
+      },
+      url:{
         type: String
       },
       isActive:{

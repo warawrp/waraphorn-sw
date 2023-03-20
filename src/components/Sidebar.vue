@@ -28,6 +28,9 @@
             @addClass="add" />
           </router-link>
         </div>
+        <a href="https://github.com/warawrp/waraphorn-sw" target="_blank" >
+          <SidebarMenu menu="Code" icon="home.svg" />
+        </a>
       </div>
     </div>
     
@@ -37,6 +40,7 @@
 
 <script>
 import SidebarMenu from '../components/SidebarMenu.vue'
+
 
 export default {
   data(){
@@ -51,7 +55,7 @@ export default {
   SidebarMenu
  },
  methods:{
-  add(id){
+  add(id,url,currentRouteName){
     this.menus = this.menus.map(e => {
       if(e.id == id){
         return {...e,isActive:true}
@@ -61,8 +65,7 @@ export default {
     })
     console.log(this.menus);
   },
- }
-
+ },
 }
 </script>
 
