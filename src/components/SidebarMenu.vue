@@ -1,33 +1,47 @@
 <template>
-        <div class="d-flex gap-3 align-item-center">
-          <img  :src="getIcon()">
-          <p>{{ menu }}</p>
-          <span>{{ id }} {{ newid }}</span>
+        <div @click="addClass(id)" >
+          <div class="d-flex gap-3 align-item-center box" :class="{ active: isActive == true }">
+            <img  :src="getIcon()">
+            <p>{{ menu }}</p>
+          </div>
         </div>
 </template>
 
 <script>
 export default {
- props:{
-    menu:String,
-    icon:String,
-    
- },
- methods:{
-    getIcon(){
-        return new URL (`../assets/icons/${this.icon}`,import.meta.url)
-    },
- }
+  props:{
+      id:{
+        type: Number
+      },
+      menu:{
+        type: String
+      },
+      icon:{
+        type: String
+      },
+      isActive:{
+        type: Boolean
+      },
+  },
+  methods:{
+      getIcon(){
+          return new URL (`../assets/icons/${this.icon}`,import.meta.url)
+      },
+      addClass(id){
+          this.$emit("addClass",id);
+          // console.log(menuId);
+      },
+  }
 }
 </script>
 
 <style scoped >
-div{
+.box{
   opacity: 50%;
   padding: 10px 20px;
   border-radius: 6px;
 }
-div:hover , div .active{
+.box:hover , .box.active{
   opacity: 100%;
   background-color: var(--primary-hover);
 }
@@ -40,10 +54,6 @@ img{
 p{
   color: var(--white);
   margin: 0;
-}
-
-span{
-  color: white;
 }
 
 </style>

@@ -11,14 +11,25 @@
     </div>
     <hr>
     <div class="d-grid" >
-      <router-link to="/">
-        <sidebar-menu menu="Portforio" icon="home.svg" />
+      <!-- <router-link to="/">
+        <sidebar-menu id="portforio" menu="Portforio" icon="home.svg" @addActive="addClass" @click="menu('portforio')" />
       </router-link>
-      <router-link to="/Resume" >
-        <SidebarMenu menu="Resume" icon="document.svg" />
-      </router-link>
+      <router-link  to="/Resume" >
+        <SidebarMenu id="resume" menu="Resume" icon="document.svg"  @addActive="addClass" @click="menu('resume')" />
+      </router-link> -->
+      <div class="d-grid gap-1" >
+        <div v-for="item in menus"  :key="item.id" >
+          <router-link  :to="item.url" >
+            <SidebarMenu 
+            :id="item.id" 
+            :menu="item.menu" 
+            :icon="item.icon" 
+            v-model:isActive="item.isActive"
+            @addClass="add" />
+          </router-link>
+        </div>
+      </div>
     </div>
-    
     
     
   </aside>
@@ -28,8 +39,28 @@
 import SidebarMenu from '../components/SidebarMenu.vue'
 
 export default {
+  data(){
+    return{
+      menus:[
+        { id:1, menu:"Portforio", icon:"home.svg", url:"/", isActive:true },
+        { id:2, menu:"Resume", icon:"document.svg", url:"/resume", isActive:false },
+      ]
+    }
+  },
  components:{
   SidebarMenu
+ },
+ methods:{
+  add(id){
+    this.menus = this.menus.map(e => {
+      if(e.id == id){
+        return {...e,isActive:true}
+      }else{
+        return {...e,isActive:false}
+      }
+    })
+    console.log(this.menus);
+  },
  }
 
 }
