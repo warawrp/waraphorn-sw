@@ -15,7 +15,7 @@
         <sidebar-menu menu="Portforio" icon="home.svg" />
       </router-link>
       <router-link to="/Resume" >
-        <SidebarMenu menu="Resume" icon="ducument" />
+        <SidebarMenu menu="Resume" icon="document.svg" />
       </router-link>
     </div>
     
