@@ -1,7 +1,7 @@
 <template>
-        <button class="btn-primary d-flex align-items-center gap-2 form-control">
+        <button class="btn-primary d-flex align-items-center justify-content-center gap-2 form-control">
             <div v-if="icon!= 0 " >
-                <img class="mb-1" :src="getImg()">
+                <img class="mb-1 d-none d-md-block" :src="getIcon()">
             </div>
             <p>{{ text }}</p>
         </button>
@@ -18,8 +18,8 @@ export default {
         }
     },
     methods:{
-        getImg(){
-            return new URL (`../assets/icons/${this.icon}`, import.meta.url)
+        getIcon(){
+            return new URL (`../../assets/icons/${this.icon}`, import.meta.url)
         }
     }
 }
@@ -27,7 +27,7 @@ export default {
 
 <style scoped>
 .btn-primary{
-  background-color: var(--warning);
+  background-color: var(--primary);
   border-radius: 4px;
   border: none;
   color: var(--white);
@@ -35,7 +35,7 @@ export default {
 }
 
 .btn-primary:hover{
-  background-color: var(--warning-hover);
+  background-color: var(--primary-hover);
 }
 
 .btn-primary:focus {

@@ -10,14 +10,27 @@
             Welcome to my personal website!</small>
     </div>
     <hr>
-    <router-link to="/">Home</router-link>
-    <router-link to="/about">About</router-link>
+    <div class="d-grid" >
+      <router-link to="/">
+        <sidebar-menu menu="Portforio" icon="home.svg" />
+      </router-link>
+      <router-link to="/Resume" >
+        <SidebarMenu menu="Resume" icon="ducument" />
+      </router-link>
+    </div>
+    
+    
     
   </aside>
 </template>
 
 <script>
+import SidebarMenu from '../components/SidebarMenu.vue'
+
 export default {
+ components:{
+  SidebarMenu
+ }
 
 }
 </script>
@@ -44,6 +57,7 @@ img{
     width: 150px;
     height: 150px;
 }
+
 
 
 </style>
