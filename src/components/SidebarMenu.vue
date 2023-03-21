@@ -1,6 +1,6 @@
 <template>
         <div @click="addClass(id)" >
-          <div class="d-flex gap-3 align-item-center box" :class="{ active: isActive == true}">
+          <div class="d-flex gap-3 align-item-center box" :class="{ active: url == this.$route.path}">
             <img  :src="getIcon()">
             <p>{{ menu }}</p>
           </div>
@@ -21,19 +21,12 @@ export default {
       },
       url:{
         type: String
-      },
-      isActive:{
-        type: Boolean
-      },
+      }
   },
   methods:{
       getIcon(){
           return new URL (`../assets/icons/${this.icon}`,import.meta.url)
-      },
-      addClass(id){
-          this.$emit("addClass",id);
-          // console.log(menuId);
-      },
+      }
   }
 }
 </script>

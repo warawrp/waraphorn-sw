@@ -24,8 +24,7 @@
             :id="item.id" 
             :menu="item.menu" 
             :icon="item.icon" 
-            v-model:isActive="item.isActive"
-            @addClass="add" />
+            :url="item.url" />
           </router-link>
         </div>
         <a href="https://github.com/warawrp/waraphorn-sw" target="_blank" >
@@ -46,26 +45,14 @@ export default {
   data(){
     return{
       menus:[
-        { id:1, menu:"Portforio", icon:"home.svg", url:"/", isActive:true },
-        { id:2, menu:"Resume", icon:"document.svg", url:"/resume", isActive:false },
+        { id:1, menu:"Portforio", icon:"home.svg", url:"/"},
+        { id:2, menu:"Resume", icon:"document.svg", url:"/resume"},
       ]
     }
   },
  components:{
   SidebarMenu
- },
- methods:{
-  add(id,url,currentRouteName){
-    this.menus = this.menus.map(e => {
-      if(e.id == id){
-        return {...e,isActive:true}
-      }else{
-        return {...e,isActive:false}
-      }
-    })
-    console.log(this.menus);
-  },
- },
+ }
 }
 </script>
 
