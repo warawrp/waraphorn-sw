@@ -233,7 +233,7 @@ h2{
 
 h6{
   font-weight: lighter;
-  font-size: 16px;
+  font-size: 14px;
 }
 
 p{
