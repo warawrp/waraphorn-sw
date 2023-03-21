@@ -1,8 +1,6 @@
 <template>
-  <div class="d-flex flex-column flex-md-row " >
-    <div>
-      <sidebar/>
-    </div>
+  <div class="d-flex flex-column flex-md-row" >
+    <sidebar/>
     <div class="container-fluid">
         <slot></slot>
         <FooterCustom/>

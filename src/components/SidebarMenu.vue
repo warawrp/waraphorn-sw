@@ -34,28 +34,26 @@ export default {
 <style scoped >
 .box{
   opacity: 50%;
-  padding: 10px 20px;
   border-radius: 6px;
+  padding: 8px;
 }
 
 p{
-  font-size: 16px;
-  color: var(--white);
-  margin: 0;
-}
-
-/* MD */
-@media screen and (max-width: 960px){
-  .box{
-    opacity: 50%;
-    padding: 5px;
-    border-radius: 6px;
-  }
-
-    p{
     font-size: 10px;
     text-align: center;
     width: 40px;
+    color: var(--white);
+    margin: 0;
+  }
+
+/* MD */
+@media only screen and (min-width: 992px){
+  .box{
+    padding: 5px 8px 5px 5px;
+  }
+  p{
+    font-size: 16px;
+    width: fit-content;
   }
 
 }

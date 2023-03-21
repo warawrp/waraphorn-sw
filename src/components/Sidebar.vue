@@ -12,6 +12,7 @@
       </div>
       <hr>
     </div>
+    
     <div class="box gap-4 gap-md-2 gap-lg-1  " >
       <div v-for="item in menus"  :key="item.id" >
         <router-link  :to="item.url" >
@@ -57,16 +58,8 @@ export default {
 
 <style scoped>
 
-.box{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  height: fit-content;
-}
-
 aside{
-  height: 100vh;
-  width: 300px;
+  height: fit-content;
   background-color:var(--primary);
   color: #fff;
   overflow-y: auto;
@@ -74,36 +67,50 @@ aside{
   position: sticky;
   top: 0;
   left: 0;
-  bottom: 0;
+  right: 0;
 } 
 
+.box{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  height: fit-content;
+}
+
 /* MD */
-@media screen and (max-width: 960px){
+@media only screen and (min-width: 768px){
     aside{
-        width: fit-content;
-        padding: 5px 0 5px 5px;
+      width: fit-content;
+      height: 100vh;
+      top: 0;
+      left: 0;
+      bottom: 0;
     } 
 
     .box{
-      height: 100vh;
+      height:calc(100% - 10px);
+      flex-direction: column;
+      
     }
 }
 
-/* sm */
-@media screen and (max-width: 540px){
+/* LG */
+@media only screen and (min-width: 992px){
     aside{
-      width: 100vw;
-      height: fit-content;
+      height: 100vh;
+      width: 300px;
       padding: 10px;
       top: 0;
       left: 0;
+      bottom: 0;
   } 
 
     .box{
-      flex-direction: row;
+      flex-direction: column;
       height: fit-content;
     }
 }
+
 
 img{
     border-radius: 50%;
