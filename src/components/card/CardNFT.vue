@@ -5,7 +5,7 @@
     </div>
     <div class="col-12 col-md-7 order-md-1">
       <div class="contentPort my-lg-4">
-        <div class="d-flex flex-column flex-sm-row justify-content-between justify-content-md-start gap-md-2 align-items-sm-center header" >
+        <div class="d-flex flex-column flex-sm-row justify-content-between justify-content-md-start gap-md-2 align-items-sm-center headerPort" >
           <h6>NFT Marketplace</h6>
           <small class="mt-2 mt-sm-0" >Out source</small>
         </div>
