@@ -1,16 +1,16 @@
 <script >
 import Header from '../components/Header.vue';
-import btnprimary from '../components/button/BtnPrimary.vue';
 import ContactList from '../components/ContactList.vue';
 import HeaderContent from '../components/HeaderContent.vue';
 import CardContent from '../components/card/CardResume.vue';
 import btnwarning from '../components/button/BtnWarning.vue';
+import btnDanger from '../components/button/BtnDangerCustom.vue';
 
 
 export default {
   components:{
     Header,
-    btnprimary,
+    btnDanger,
     ContactList,
     HeaderContent,
     CardContent,
@@ -24,7 +24,7 @@ export default {
         <template  v-slot:sub-title >
           <div class="d-flex gap-2 flex-column flex-sm-row" >
             <a href="/waraphornSw-resume2023.pdf" download>
-              <btnprimary  text="Download Resume PDF Version" icon="pdf.svg"/>
+              <btnDanger  text="Download Resume PDF Version" icon="pdf.svg"/>
             </a>
             <a href="/waraphornSw-other-documents.pdf" download>
               <btnwarning  text="Download Other Documents" icon="pdf.svg"/>
@@ -219,13 +219,13 @@ export default {
 .container-fluid{
   width:calc(100% - 20px);
   margin: 10px;
-  background-color: var(--lightgrey);
+  background-color: var(--primary);
   padding: 20px;
-  box-shadow: 0 0 50px #b8b7b759;
+  border-radius: 10px;
 }
 
 h2{
-  color: var(--primary);
+  color: var(--white);
   margin-bottom: 0;
   font-weight: bolder;
   font-size: 20px;
@@ -234,16 +234,18 @@ h2{
 h6{
   font-weight: lighter;
   font-size: 14px;
+  color: var(--grey);
 }
 
 p{
   margin-bottom: 0;
+  color: var(--grey);
 }
 
 
 @media screen and (min-width: 1200px) {
   .header-line{
-    border-left: 1px solid var(--grey) ;
+    border-left: 1px solid #92929260 ;
   }
 
   h2{
@@ -262,7 +264,8 @@ p{
   }
 
   p{
-      white-space: nowrap;
+    white-space: nowrap;
+    
   }
 
 }

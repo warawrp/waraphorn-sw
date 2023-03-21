@@ -1,0 +1,54 @@
+<template>
+        <button class="btn-danger d-flex align-items-center justify-content-center gap-2 form-control">
+            <div v-if="icon!= 0 " >
+                <img class="mb-1 d-none d-md-block" :src="getIcon()">
+            </div>
+            <p>{{ text }}</p>
+        </button>
+    
+</template>
+
+<script>
+export default {
+    props:{
+        text:String,
+        icon:{
+            String,
+            default: 0
+        }
+    },
+    methods:{
+        getIcon(){
+            return new URL (`../../assets/icons/${this.icon}`, import.meta.url)
+        }
+    }
+}
+</script>
+
+<style scoped>
+.btn-danger{
+  background-color: var(--danger);
+  border-radius: 4px;
+  border: none;
+  color: var(--white);
+  padding: 5px 10px 3px;
+}
+
+.btn-danger:hover{
+  background-color: var(--danger-hover);
+}
+
+.btn-danger:focus {
+  outline: none !important;
+}
+
+img{
+  width: 20px;
+  filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(108deg) brightness(104%) contrast(104%);
+}
+
+p{
+    padding: 0;
+    margin: 0;
+}
+</style>

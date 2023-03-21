@@ -21,7 +21,7 @@ export default {
 .title{
     font-size: 16px;
     font-weight: 500;
-    color: var(--secondary);
+    color: var(--white);
     margin-bottom: 5px;
 }
 

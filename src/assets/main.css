@@ -1,18 +1,23 @@
 :root{
-  --primary: #4682B4;
-  --primary-hover: #2573b3;
+  /* --primary: #4682B4; */
+  --primary:#1e2738;
+  /* --primary-hover: #2573b3; */
+  --primary-hover: #19202e;
   --secondary:#1e2738;
   --warning:#f6d07f;
   --warning-hover:#f3c35d;
   --grey:#a5b3ce;
   --white:#ffffff;
   --lightgrey:#fafafa;
+  --bg:#19202e;
+  --danger:#fe655c;
+  --danger-hover:#e74139;
 }
 
 body{
   font-family: 'Rubik', 'Kanit', sans-serif;
   font-size: 16px;
-  color: var(--secondary);
+  background-color: var(--bg);
 }
 
 .contact-img{
@@ -101,6 +106,14 @@ p{
   background-color: #e83a2d;
 }
 
+.defualt{
+  background-color: var(--bg);
+}
+
+.danger{
+  background-color: var(--danger);
+}
+
 a{
   text-decoration: none;
 }
@@ -126,3 +139,49 @@ a{
 ::-webkit-scrollbar-thumb:hover {
   background: var(--primary-hover); 
 }
+
+hr{
+  background-color: var(--grey);
+}
+
+.cardPort{
+  padding: 20px;
+  border-radius: 10px;
+  background-color: var(--primary);
+}
+
+.cardPort img{
+  width:100%;
+}
+.contentPort{
+  color: var(--white);
+}
+
+.headerPort small{
+  background-color: #00000031;
+  height: 22px;
+  padding: 0 10px;
+  border-radius: 50px;
+  width: fit-content;
+}
+
+.cardPort h6{
+  margin: 0;
+ }
+
+.cardPort li{
+  font-weight: lighter;
+ }
+
+.cardPort small{
+  font-size: 14px;
+ }
+
+ .logoPort img{
+  width: auto;
+  filter: grayscale(80%);
+ }
+
+ .logoPort img:hover{
+  filter: grayscale(0%);
+ }

@@ -21,10 +21,11 @@ export default {
 
 <style scoped>
 img{
-    filter: invert(15%) sepia(27%) saturate(657%) hue-rotate(180deg) brightness(91%) contrast(100%);
+    filter: invert(99%) sepia(54%) saturate(0%) hue-rotate(189deg) brightness(113%) contrast(100%);
 }
 
 small{
   font-weight: lighter;
+  color: var(--white);
 }
 </style>

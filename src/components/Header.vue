@@ -15,9 +15,10 @@ export default {
 
 <style scoped>
   header{
-    padding: 30px;
+    padding: 20px;
     text-align: center;
-    background-color: var(--lightgrey);
+    background-color: var(--bg);
+    color: var(--white);
   }
 
   

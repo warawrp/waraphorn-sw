@@ -14,14 +14,14 @@ export default {
 
 <style scoped >
 div{
-    border-left: 5px solid var(--primary);
+    border-left: 5px solid var(--white);
 }
 
 
 
 h5{
     padding: 0 0 0 10px;
-    color: var(--primary);
+    color: var(--white);
     text-transform: uppercase;
     font-size: 18px;
     letter-spacing: 1px;

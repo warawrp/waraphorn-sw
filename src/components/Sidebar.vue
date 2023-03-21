@@ -8,8 +8,17 @@
               Hi, my name is Waraphorn Srijiw <br>
               and I'm a Front-end Developer <br> 
               and UX/UI Designer.<br>
-              Welcome to my personal website!</small>
+              Welcome to my personal website!
+          </small>
       </div>
+      <hr>
+      <small >My Status</small>
+      <div class="mt-2 d-flex gap-1 flex-wrap">
+          <span class="pill danger" >กำลังหางาน</span>
+          <span class="pill defualt" >FullTime</span>
+          <span class="pill defualt" >WFH</span>
+          <span class="pill defualt" >Work Hybrid</span>
+        </div>
       <hr>
     </div>
     
@@ -115,8 +124,9 @@ aside{
 
 img{
     border-radius: 50%;
-    width: 150px;
-    height: 150px;
+    width: 100px;
+    height: 100px;
+    filter: grayscale(80%);
 }
 
 
