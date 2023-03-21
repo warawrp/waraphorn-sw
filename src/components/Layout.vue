@@ -1,6 +1,6 @@
 <template>
-  <div class="d-flex " >
-    <div class="d-none d-lg-block">
+  <div class="d-flex flex-column flex-md-row " >
+    <div>
       <sidebar/>
     </div>
     <div class="container-fluid">

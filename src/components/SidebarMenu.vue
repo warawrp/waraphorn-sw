@@ -1,8 +1,8 @@
 <template>
-        <div @click="addClass(id)" >
-          <div class="d-flex gap-3 align-item-center box" :class="{ active: url == this.$route.path}">
-            <img  :src="getIcon()">
-            <p>{{ menu }}</p>
+        <div>
+          <div class="d-flex flex-column flex-lg-row gap-lg-3  justify-content-lg-start align-items-lg-center box" :class="{ active: url == this.$route.path}">
+            <img class="mx-auto mx-lg-0"  :src="getIcon()">
+            <p class="d-none d-md-block" >{{ menu }}</p>
           </div>
         </div>
 </template>
@@ -37,6 +37,29 @@ export default {
   padding: 10px 20px;
   border-radius: 6px;
 }
+
+p{
+  font-size: 16px;
+  color: var(--white);
+  margin: 0;
+}
+
+/* MD */
+@media screen and (max-width: 960px){
+  .box{
+    opacity: 50%;
+    padding: 5px;
+    border-radius: 6px;
+  }
+
+    p{
+    font-size: 10px;
+    text-align: center;
+    width: 40px;
+  }
+
+}
+
 .box:hover , .box.active{
   opacity: 100%;
   background-color: var(--primary-hover);
@@ -47,9 +70,5 @@ img{
   filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(108deg) brightness(104%) contrast(104%);
 }
 
-p{
-  color: var(--white);
-  margin: 0;
-}
 
 </style>
