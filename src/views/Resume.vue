@@ -8,6 +8,14 @@ import btnDanger from '../components/button/BtnDangerCustom.vue';
 
 
 export default {
+  data(){
+    return{
+      skills:[
+        "HTML 5","CSS","JavaScrip","JavaScrip ES6","Bootstrap 4","Bootstrap 5","Tailwind CSS",
+        "Vue.js","Nuxt.js","Next.js","Figma","Adobe XD","Adobe Photoshop","Adobe illustator","GitHab / Gitlab"
+    ]
+    }
+  },
   components:{
     Header,
     btnDanger,
@@ -168,21 +176,7 @@ export default {
               <div>
                 <HeaderContent title="Skills" />
                 <CardContent title="Technical">
-                  <p>HTML 5</p>
-                  <p>CSS</p>
-                  <p>JavaScrip</p>
-                  <p>JavaScrip ES6</p>
-                  <p>Bootstrap 4</p>
-                  <p>Bootstrap 5</p>
-                  <p>Tailwind CSS</p>
-                  <p>Vue.js </p>
-                  <p>Nuxt.js</p>
-                  <p>Next.js</p>
-                  <p>Figma</p>
-                  <p>Adobe XD</p>
-                  <p>Adobe Photoshop</p>
-                  <p>Adobe illustator</p>
-                  <p>GitHab / Gitlab</p>
+                  <p v-for="(item,index) in skills" :key="index">{{ item }}</p>
                 </CardContent>
               </div>
           </div>
