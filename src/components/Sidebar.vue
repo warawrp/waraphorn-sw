@@ -5,8 +5,8 @@
         <h5>Waraphorn Srijiw</h5>
         <img src="../assets/img/img.png" alt="profile">
         <small class="text-center" >
-            Hi, my name is Waraphorn Srijiw <br>
-            and I'm a Front-end Developer <br> 
+            Hi, my name is Waraphorn Srijiw. <br>
+            I'm Front-end Developer <br> 
             and UX/UI Designer.<br>
             Welcome to my personal website!
         </small>
@@ -59,9 +59,8 @@
               <div class="d-flex flex-column align-items-center mt-4 gap-3 ">
               <h6> Welcome to my personal website!</h6>
               <small class="text-center" >
-                  Hi, my name is Waraphorn Srijiw <br>
-                  and I'm a Front-end Developer <br> 
-                  and UX/UI Designer.<br>
+                  Hi, my name is Waraphorn Srijiw. <br>
+                  I'm Front-end Developer and UX/UI Designer.<br>
               </small>
             </div>
             <hr>
