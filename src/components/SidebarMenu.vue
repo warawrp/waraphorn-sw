@@ -41,7 +41,6 @@ export default {
 p{
     font-size: 10px;
     text-align: center;
-    width: 40px;
     color: var(--white);
     margin: 0;
   }
