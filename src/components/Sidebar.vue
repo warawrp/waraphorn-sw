@@ -14,7 +14,7 @@
       <hr>
       <small >My Status</small>
       <div class="mt-2 d-flex gap-1 flex-wrap">
-        <span class="pill danger" >กำลังหางาน</span>
+        <span class="pill danger" >Looking for Work</span>
         <span class="pill defualt" >FullTime</span>
         <span class="pill defualt" >WFH</span>
         <span class="pill defualt" >Work Hybrid</span>
@@ -57,18 +57,17 @@
               <img src="../assets/icons/close.svg" alt="">
             </div>
               <div class="d-flex flex-column align-items-center mt-4 gap-3 ">
-              <h5>Waraphorn Srijiw</h5>
+              <h6> Welcome to my personal website!</h6>
               <small class="text-center" >
                   Hi, my name is Waraphorn Srijiw <br>
                   and I'm a Front-end Developer <br> 
                   and UX/UI Designer.<br>
-                  Welcome to my personal website!
               </small>
             </div>
             <hr>
             <small class="text-center d-block w-100" >My Status</small>
             <div class="mt-2 d-flex gap-1 flex-wrap justify-content-center">
-              <span class="pill danger" >กำลังหางาน</span>
+              <span class="pill danger" >Looking for Work</span>
               <span class="pill defualt" >FullTime</span>
               <span class="pill defualt" >WFH</span>
               <span class="pill defualt" >Work Hybrid</span>
