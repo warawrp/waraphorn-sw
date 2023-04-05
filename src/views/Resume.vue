@@ -11,7 +11,7 @@ export default {
   data(){
     return{
       skills:[
-        "HTML 5","CSS","JavaScrip","JavaScrip ES6","Bootstrap 4","Bootstrap 5","Tailwind CSS",
+        "HTML 5","CSS","JavaScript","JavaScript ES6","Bootstrap 4","Bootstrap 5","Tailwind CSS",
         "Vue.js","Nuxt.js","Next.js","Figma","Adobe XD","Adobe Photoshop","Adobe illustator","GitHab / Gitlab"
     ]
     }
