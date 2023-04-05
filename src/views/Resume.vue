@@ -69,7 +69,7 @@ export default {
                     <div class="d-flex flex-wrap align-items-center gap-1">
                       <span class="pill html" >HTML 5</span>
                       <span class="pill css" >CSS</span>
-                      <span class="pill js" >Javascrip</span>
+                      <span class="pill js" >JavaScript</span>
                       <span class="pill bootstrap" >Bootstrap 5</span>
                       <span class="pill nuxt" >Nuxt.js</span>
                       <span class="pill next" >Next.js</span>
@@ -91,7 +91,7 @@ export default {
                     <div class="d-flex flex-wrap align-items-center gap-1">
                       <span class="pill html" >HTML 5</span>
                       <span class="pill css" >CSS</span>
-                      <span class="pill js" >Javascrip</span>
+                      <span class="pill js" >JavaScript</span>
                       <span class="pill bootstrap" >Bootstrap 4</span>
                       <span class="pill vue" >vue.js</span>
                     </div>
@@ -119,7 +119,7 @@ export default {
                     <div class="d-flex flex-wrap align-items-center gap-1">
                       <span class="pill html" >HTML 5</span>
                       <span class="pill css" >CSS</span>
-                      <span class="pill js" >Javascrip</span>
+                      <span class="pill js" >JavaScript</span>
                       <span class="pill bootstrap" >Bootstrap 4</span>
                       <span class="pill laravel" >Laravel 7</span>
                     </div>
